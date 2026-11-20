@@ -3,7 +3,7 @@ name: 안동농협 공판장 일일 시세 알람
 on:
   schedule:
     # 한국시간(KST) 월~토 오후 4시, 5시, 6시, 7시 자동 확인 (새 글 올라오면 하루 1번만 발송)
-    - cron: '0 7,8,9,10 * * 1-6'
+    - cron: '0 0 * * 1-6'
   workflow_dispatch:
     inputs:
       force_test:
